@@ -1,0 +1,13 @@
+{
+  "name": "ilkeartproject",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Lukasz Fijalkowski",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

@@ -1,0 +1,109 @@
+.whatwedo {
+  height: 1192px;
+  margin-top: 75px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 163px;
+    &__content {
+      margin-left: 75px;
+      width: 634px;
+      height: 469px;
+
+      &__title {
+        color: #4b479e;
+        font-family: Montserrat;
+        font-size: 29px;
+        font-weight: 700;
+        line-height: 20.99px;
+        text-align: center;
+        width: 183px;
+        height: 23px;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 93px;
+      }
+      &__text {
+        display: flex;
+        margin-top: 60px;
+        color: #333336;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+        width: 596px;
+        height: 136px;
+        text-align: center;
+        justify-self: center;
+      }
+    }
+    &__image {
+      width: 634px;
+      height: 469px;
+    }
+  }
+  &-about {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 163px;
+    margin-top: 105px;
+    &__box {
+      width: 268px;
+      height: 457px;
+      box-shadow: 0 3px 43px rgba(55, 53, 154, 0.15);
+      margin: 0;
+      padding: 0;
+
+      &__image {
+        width: 106px;
+        height: 130px;
+        margin-left: 35px;
+        margin-top: 36px;
+      }
+      &__content__title {
+        width: 137px;
+        height: 49px;
+        color: #161765;
+        font-family: "Montserrat - Semi Bold";
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+        margin-left: 35px;
+        margin-top: 40px;
+      }
+      &__content__text {
+        width: 175px;
+        height: 88px;
+        color: #161765;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-left: 35px;
+        margin-top: 29px;
+      }
+      &__button {
+        margin-top: 30px;
+        width: 268px;
+        height: 54px;
+        background-color: #4b479e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        cursor: pointer;
+        &__span {
+          color: #53eac9;
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}

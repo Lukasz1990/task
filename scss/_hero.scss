@@ -1,0 +1,122 @@
+.header {
+  margin: 0;
+  padding: 0;
+  &-hero {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    &__brand {
+      width: 271px;
+      height: 32px;
+      margin-left: 160px;
+    }
+    &__navbar {
+      &__items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-right: 129px;
+      }
+      &__items li {
+        margin: 0 4px;
+        display: inline-block;
+      }
+      &__items li a {
+        padding: 20px 30px;
+        text-decoration: none;
+        display: inline-block;
+        color: $white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.title-box {
+  margin-top: 232px;
+  margin-left: 160px;
+  width: 559px;
+  height: 114px;
+  color: $white;
+  font-family: Montserrat;
+
+  &__text {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 67.85px;
+  }
+}
+.box-desc {
+  margin-left: 160px;
+  margin-top: 45px;
+  width: 434px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    color: #72b2f2;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 60px;
+  }
+}
+.hero-buttons {
+  margin-top: 104px;
+  margin-left: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  &__btn1 {
+    background: $buttonHeroColor;
+    width: 173px;
+    height: 49px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 60px;
+    & p {
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+  &__btn2 {
+    background: $button2HeroColor;
+    width: 234px;
+    height: 49px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11px;
+    line-height: 60px;
+    & p {
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+}
+.brands {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 160px;
+  margin-right: 156px;
+  margin-top: 138px;
+
+  &__logo {
+    width: 93px;
+    height: 63px;
+  }
+}
