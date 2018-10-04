@@ -11,6 +11,12 @@
       width: 271px;
       height: 32px;
       margin-left: 160px; }
+      .header-hero__brand img {
+        height: 100%; }
+      @media screen and (min-width: 768px) and (max-width: 1280px) {
+        .header-hero__brand {
+          width: 200px;
+          height: 20px; } }
     .header-hero__navbar__items {
       margin: 0;
       padding: 0;
@@ -19,6 +25,9 @@
     .header-hero__navbar__items li {
       margin: 0 4px;
       display: inline-block; }
+      @media screen and (min-width: 320px) and (max-width: 768px) {
+        .header-hero__navbar__items li {
+          display: none; } }
     .header-hero__navbar__items li a {
       padding: 20px 30px;
       text-decoration: none;
@@ -27,9 +36,12 @@
       font-family: Montserrat;
       font-size: 18px;
       font-weight: 400; }
+      @media screen and (min-width: 768px) and (max-width: 1280px) {
+        .header-hero__navbar__items li a {
+          font-size: 10px; } }
 
 .title-box {
-  margin-top: 232px;
+  margin-top: 190px;
   margin-left: 160px;
   width: 559px;
   height: 114px;
@@ -39,6 +51,9 @@
     font-size: 55px;
     font-weight: 800;
     line-height: 67.85px; }
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      .title-box__text {
+        font-size: 30px; } }
 
 .box-desc {
   margin-left: 160px;
@@ -75,6 +90,8 @@
       font-size: 18px;
       font-weight: 500;
       color: #fff; }
+      .hero-buttons__btn1 p a {
+        text-decoration: none; }
   .hero-buttons__btn2 {
     background: #312e65;
     width: 234px;
@@ -102,6 +119,10 @@
   .brands__logo {
     width: 93px;
     height: 63px; }
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      .brands__logo {
+        width: 63px;
+        height: 43px; } }
 
 .whatwedo {
   height: 1192px;
@@ -111,6 +132,11 @@
     justify-content: space-between;
     margin-left: 160px;
     margin-right: 163px; }
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      .whatwedo-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px; } }
     .whatwedo-container__content {
       margin-left: 75px;
       width: 634px;

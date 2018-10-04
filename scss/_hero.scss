@@ -11,6 +11,13 @@
       width: 271px;
       height: 32px;
       margin-left: 160px;
+      & img {
+        height: 100%;
+      }
+      @include Medium {
+        width: 200px;
+        height: 20px;
+      }
     }
     &__navbar {
       &__items {
@@ -22,6 +29,9 @@
       &__items li {
         margin: 0 4px;
         display: inline-block;
+        @include Small {
+          display: none;
+        }
       }
       &__items li a {
         padding: 20px 30px;
@@ -31,12 +41,15 @@
         font-family: Montserrat;
         font-size: 18px;
         font-weight: 400;
+        @include Medium {
+          font-size: 10px;
+        }
       }
     }
   }
 }
 .title-box {
-  margin-top: 232px;
+  margin-top: 190px;
   margin-left: 160px;
   width: 559px;
   height: 114px;
@@ -47,6 +60,9 @@
     font-size: 55px;
     font-weight: 800;
     line-height: 67.85px;
+    @include Medium {
+      font-size: 30px;
+    }
   }
 }
 .box-desc {
@@ -86,6 +102,9 @@
       font-size: 18px;
       font-weight: 500;
       color: $white;
+      & a {
+        text-decoration: none;
+      }
     }
   }
   &__btn2 {
@@ -118,5 +137,10 @@
   &__logo {
     width: 93px;
     height: 63px;
+
+    @include Medium {
+      width: 63px;
+      height: 43px;
+    }
   }
 }

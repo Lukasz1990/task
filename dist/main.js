@@ -24,6 +24,9 @@ const validate = (field, regxt) => {
   ) {
     field.parentNode.classList.remove("valid");
   }
+  if (field.value === "") {
+    field.parentNode.classList.remove("invalid");
+  }
 };
 inputs.forEach(input => {
   input.addEventListener("keyup", e => {
