@@ -1,9 +1,15 @@
+.hero {
+  height: 900px;
+  background: url(../Images/bg2.jpg);
+}
+
 .header {
   margin: 0;
   padding: 0;
   &-hero {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-top: 45px;
@@ -20,6 +26,7 @@
       }
     }
     &__navbar {
+      position: relative;
       &__items {
         margin: 0;
         padding: 0;

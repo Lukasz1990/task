@@ -4,48 +4,29 @@
 @import "whatwedo";
 @import "technology";
 @import "contact";
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 .active {
   border: 2px solid #5c7cc7;
   border-radius: 40px;
 }
 
-.hero {
-  height: 900px;
-  background: url(../Images/bg2.jpg);
-  margin: 0;
-  padding: 0;
-}
-
 .form {
   text-transform: uppercase;
 }
-.contact {
-  position: absolute;
-  left: 0;
-}
-.input {
-  width: 200px;
-}
+
 .valid {
   border-color: $activeGreen;
 }
 .invalid {
   border-color: red;
-}
-
-.header-hero__navbar__items li a {
-  font-family: $globalFont;
-  text-decoration: none;
-  font-size: 2rem;
-  list-style: none;
 }
