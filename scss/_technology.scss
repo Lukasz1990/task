@@ -3,16 +3,44 @@
 }
 .technology {
   margin: 0;
-  padding: 0;
+  padding: 130px 0;
   height: 900px;
+
+  @include Small {
+    height: auto;
+  }
+  @include Medium {
+    height: auto;
+  }
   &-container {
     display: flex;
     justify-content: space-between;
     margin-left: 160px;
     margin-right: 163px;
+    position: relative;
+    text-align: center;
+
+    @include Medium {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+    @include Small {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
     &__content {
       width: 657px;
       height: 614px;
+      padding-top: 159px;
+
+      @include Medium {
+        width: auto;
+      }
+      @include Small {
+        width: auto;
+      }
       &__title {
         width: 176px;
         height: 29px;
@@ -22,7 +50,6 @@
         font-weight: 700;
         line-height: 20.99px;
         margin: 0 auto;
-        margin-top: 159px;
       }
       &__text {
         color: #333336;
@@ -52,6 +79,17 @@
     &__image {
       width: 657px;
       height: 614px;
+      @include Medium {
+        width: auto;
+        height: auto;
+      }
+      @include Small {
+        width: auto;
+        height: auto;
+      }
+      & img {
+        max-width: 100%;
+      }
     }
   }
 }

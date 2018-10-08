@@ -14,15 +14,31 @@
     justify-content: space-between;
     padding-top: 45px;
     &__brand {
-      width: 271px;
-      height: 32px;
+      display: flex;
       margin-left: 160px;
-      & img {
-        height: 100%;
-      }
-      @include Medium {
-        width: 200px;
-        height: 20px;
+      position: relative;
+      &__item {
+        width: 271px;
+        height: 42px;
+        position: relative;
+        &-span {
+          bottom: 0;
+          left: 0;
+          color: $white;
+          font-size: 2rem;
+          font-family: "Montserrat";
+          font-weight: 200;
+          position: absolute;
+        }
+
+        @include Medium {
+          width: 200px;
+          height: 20px;
+        }
+        @include Small {
+          width: 150px;
+          height: 15px;
+        }
       }
     }
     &__navbar {
@@ -70,6 +86,9 @@
     @include Medium {
       font-size: 30px;
     }
+    @include Small {
+      font-size: 1.5rem;
+    }
   }
 }
 .box-desc {
@@ -87,6 +106,12 @@
     font-size: 19px;
     font-weight: 300;
     line-height: 60px;
+    @include Medium {
+      font-size: 1.5rem;
+    }
+    @include Small {
+      font-size: 0.8rem;
+    }
   }
 }
 .hero-buttons {
@@ -108,9 +133,15 @@
       font-family: Montserrat;
       font-size: 18px;
       font-weight: 500;
-      color: $white;
+      @include Medium {
+        font-size: 1rem;
+      }
+      @include Small {
+        font-size: 0.6rem;
+      }
       & a {
         text-decoration: none;
+        color: $white;
       }
     }
   }
@@ -129,6 +160,14 @@
       font-size: 18px;
       font-weight: 500;
       color: $white;
+      cursor: pointer;
+
+      @include Medium {
+        font-size: 1rem;
+      }
+      @include Small {
+        font-size: 0.6rem;
+      }
     }
   }
 }

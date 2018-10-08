@@ -4,15 +4,29 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  @include Small {
+    height: auto;
+  }
+  @include Medium {
+    height: auto;
+  }
 
   &-container {
     display: flex;
     justify-content: space-between;
-
     margin-left: 219px;
     margin-right: 223px;
     margin-top: 74px;
-
+    @include Medium {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+    @include Small {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
     &__content {
       margin-top: 63px;
       width: 290px;
@@ -31,6 +45,9 @@
         text-transform: uppercase;
         line-height: 28px;
         margin-top: 37px;
+        & a {
+          text-decoration: none;
+        }
       }
       &__socialmedia {
         margin-top: 65px;
@@ -72,6 +89,7 @@
             width: 100%;
             padding: 2em 2em;
             color: $white;
+            transform: translateY(20px);
           }
           & label {
             width: 100%;
@@ -96,6 +114,7 @@
           width: 100%;
           padding: 2em 2em;
           color: $white;
+          transform: translateY(20px);
           &:focus ~ label {
             bottom: 80%;
           }

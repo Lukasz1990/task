@@ -17,8 +17,6 @@
       grid-template-columns: 1fr;
       grid-gap: 30px;
       justify-content: center;
-      grid-auto-rows: minmax(300px, auto);
-      grid-auto-columns: minmax(300px, auto);
     }
     &__content {
       margin-left: 75px;
@@ -50,17 +48,22 @@
         height: 136px;
         text-align: center;
         justify-self: center;
+        @include Small {
+          width: 317px;
+          height: 234px;
+          display: flex;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
       }
     }
     &__image {
       width: 634px;
       height: 469px;
-      display: flex;
-      align-content: center;
+
       @include Small {
         width: 317px;
         height: 234px;
-        display: flex;
         margin: 0 auto;
       }
       & img {
