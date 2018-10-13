@@ -27,7 +27,13 @@ const validate = (field, regxt) => {
   if (field.value === "") {
     field.parentNode.classList.remove("invalid");
   }
+  if (field.value !== "") {
+    field.parentNode.children[1].style.bottom = "80%";
+  } else {
+    field.parentNode.children[1].style.bottom = "20%";
+  }
 };
+
 inputs.forEach(input => {
   input.addEventListener("keyup", e => {
     validate(e.target, limitations[e.target.name]);

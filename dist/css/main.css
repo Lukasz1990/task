@@ -224,7 +224,9 @@
             margin-top: 20px; } }
     .whatwedo-container__image {
       width: 634px;
-      height: 469px; }
+      height: 469px;
+      display: flex;
+      align-items: center; }
       @media screen and (min-width: 320px) and (max-width: 768px) {
         .whatwedo-container__image {
           width: 317px;

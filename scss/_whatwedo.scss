@@ -60,6 +60,8 @@
     &__image {
       width: 634px;
       height: 469px;
+      display: flex;
+      align-items: center;
 
       @include Small {
         width: 317px;
