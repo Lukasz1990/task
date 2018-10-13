@@ -491,8 +491,6 @@
           padding: 2em 2em;
           color: #fff;
           transform: translateY(20px); }
-          .contact-container__form__box input:focus ~ label {
-            bottom: 80%; }
         .contact-container__form__box label {
           width: 100%;
           height: 9px;
@@ -552,6 +550,9 @@
 
 .invalid {
   border-bottom: 1px solid tomato; }
+
+.labelbottom {
+  bottom: 80%; }
 
 * {
   box-sizing: border-box; }

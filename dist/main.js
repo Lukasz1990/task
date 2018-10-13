@@ -8,6 +8,7 @@ const limitations = {
 };
 
 let inputs = document.querySelectorAll("input");
+
 const validate = (field, regxt) => {
   regxt.test(field.value)
     ? field.parentNode.classList.add("valid")
@@ -24,17 +25,18 @@ const validate = (field, regxt) => {
   ) {
     field.parentNode.classList.remove("valid");
   }
+
   if (field.value === "") {
     field.parentNode.classList.remove("invalid");
-  }
-  if (field.value !== "") {
-    field.parentNode.children[1].style.bottom = "80%";
-  } else {
-    field.parentNode.children[1].style.bottom = "20%";
   }
 };
 
 inputs.forEach(input => {
+  let field = input;
+  input.addEventListener("focus", () => {
+    field.parentNode.children[1].style.bottom = "80%";
+  });
+
   input.addEventListener("keyup", e => {
     validate(e.target, limitations[e.target.name]);
   });

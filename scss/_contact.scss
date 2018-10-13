@@ -115,9 +115,6 @@
           padding: 2em 2em;
           color: $white;
           transform: translateY(20px);
-          &:focus ~ label {
-            bottom: 80%;
-          }
         }
         & label {
           width: 100%;
@@ -190,4 +187,8 @@
 }
 .invalid {
   border-bottom: 1px solid $invalidColor;
+}
+
+.labelbottom {
+  bottom: 80%;
 }
